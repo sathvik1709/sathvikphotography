@@ -7,7 +7,7 @@ $(document).ready(function(){
         $(this).fadeTo('fast',0.75);
     });
     
-    $('#image-gallery-button').on('click', function (event) {
+    $('#butterfly-slideshow').on('click', function (event) {
         event.preventDefault();
         var borderless = true;
         $('#blueimp-gallery').data('useBootstrapModal', !borderless);
