@@ -1,11 +1,9 @@
 $(document).ready(function(){
     
-    $('.categories').mouseenter(function(){
-        $(this).fadeTo('fast',1);
-    });
-    $('.categories').mouseleave(function(){
-        $(this).fadeTo('fast',0.75);
-    });
+    $( ".col-md-2, .col-md-3, .col-md-4" ).show( "explode",{pieces: 16}, 2000 );
+    
+   $(".col-md-2").delay(2000).fadeIn(500);
+    
     
     $('#butterfly-slideshow').on('click', function (event) {
         event.preventDefault();

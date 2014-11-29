@@ -9,11 +9,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="js/bootstrap.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    
+    <script src="jquery-ui.js"></script>
     <!-- blueimp image gallery-->
     <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 <style>
+    
+   
     
 html, body{
     margin:0;
@@ -27,7 +29,7 @@ html, body{
         display: none;
     }
     
-    .blueimp-gallery>.slides>.slide>.slide-content, .blueimp-gallery>.prev, .blueimp-gallery>.next, .blueimp-gallery>.close, .blueimp-gallery>.play-pause{
+.blueimp-gallery>.slides>.slide>.slide-content, .blueimp-gallery>.prev, .blueimp-gallery>.next, .blueimp-gallery>.close, .blueimp-gallery>.play-pause{
          overflow: hidden;
     }
     
@@ -36,11 +38,13 @@ html, body{
     transition: 0.2s ease-in-out;
 }
     
- #center-cropped:hover{
+#center-cropped:hover{
   opacity: 1;
-  -webkit-transform: scale(1.2);
+  -webkit-transform: scale(1.5);
           transform: scale(1.1);
 }  
+    
+
 
 </style>
 </head>
@@ -72,7 +76,6 @@ html, body{
                 <img  id="center-cropped" src="img/thumbnail/landscape.jpg" style="height:100%;width:100%;">
             </div>
         </div>
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
         <!-- row 2-->
         <div class="row" style="height:25%;">
             <div class="col-md-3" id="butterfly-slideshow" style="height:100%;padding:1px;">
@@ -84,8 +87,8 @@ html, body{
             <div class="col-md-2" style="height:100%;padding:1px;">
                 <img id="center-cropped" src="img/thumbnail/butterfly.jpg" style="height:100%;width:100%;">
             </div>
-            <div class="col-md-2" style="height:100%;padding:1px;">
-                <img id="center-cropped" src="img/thumbnail/flower.jpg" style="height:100%;width:100%;">
+            <div class="col-md-2" id="center-cropped" style="height:100%;padding:1px;">
+                <h3 style="padding:10px;" >Photo essays</h3>
             </div>
             <div class="col-md-2" style="height:100%;padding:1px;">
                 <img id="center-cropped" src="img/thumbnail/portraiture.jpg" style="height:100%;width:100%;">
@@ -97,12 +100,25 @@ html, body{
                 <div  style="width:100%;">
                     <div class="row"  style="margin-right:0px;margin-left:10px;"><h3>Follow me on : </h3></div>
                     <div class="row" style="margin-right:0px;margin-left:10px;">
-                        <img id="center-cropped" style="max-width:max-40px;height:40px;margin-top:auto;" src="icons/flickr_follow.png" />
-                        <img id="center-cropped" style="width:40px;height:40px;margin-top:auto;" src="icons/fb_follow.png" />
-                        <img id="center-cropped" style="width:40px;height:40px;margin-top:auto;" src="icons/gplus_follow.png" />
-                        <img id="center-cropped" style="width:40px;height:40px;margin-top:auto;" src="icons/twitter_follow.png" />
-                        <img id="center-cropped" style="width:40px;height:40px;margin-top:auto;" src="icons/500px_follow.png" />
-                        <img id="center-cropped" style="width:40px;height:40px;margin-top:auto;" src="icons/instagram_follow.png" />
+                         <a href="https://500px.com/sathvikphotography">
+                            <img id="center-cropped" style="width:40px;height:40px;margin-top:auto;" src="icons/500px_follow.png" />
+                        </a>
+                        <a href="https://www.flickr.com/photos/sathvikphotography">
+                                 <img id="center-cropped" 
+                                      style="max-width:max-40px;height:40px;margin-top:auto;" src="icons/flickr_follow.png" />
+                        </a>
+                        <a href="http://instagram.com/sathvikshivaprakash519">
+                            <img id="center-cropped" style="width:40px;height:40px;margin-top:auto;" src="icons/instagram_follow.png" />
+                        </a>
+                        <a href="https://www.facebook.com/sathvikphotography">
+                            <img id="center-cropped" style="width:40px;height:40px;margin-top:auto;" src="icons/fb_follow.png" />
+                        </a>
+                        <a href="http://www.google.com/+sathviks">
+                            <img id="center-cropped" style="width:40px;height:40px;margin-top:auto;" src="icons/gplus_follow.png" />
+                        </a>
+                        <a href="https://twitter.com/Sathvik1709">
+                            <img id="center-cropped" style="width:40px;height:40px;margin-top:auto;" src="icons/twitter_follow.png" />
+                        </a>
                     </div>
                     
                 </div>
@@ -110,8 +126,8 @@ html, body{
             <div class="col-md-3" style="height:100%;padding:1px;">
                 <img id="center-cropped" class="img-responsive" src="img/thumbnail/hdr.jpg" style="height:100%;width:100%;">
             </div>
-            <div class="col-md-2" id="center-cropped" style="height:100%;padding:1px;">
-                <h3 style="padding:10px;" >Photo essays</h3>
+            <div class="col-md-2" style="height:100%;padding:1px;">
+                <img id="center-cropped" src="img/thumbnail/flower.jpg" style="height:100%;width:100%;">
             </div>
             <div class="col-md-3" style="height:100%;padding:1px;">
                 <img id="center-cropped" src="img/thumbnail/kerala.jpg" style="height:100%;width:100%;">
@@ -125,7 +141,7 @@ html, body{
             <div class="col-md-3" style="height:100%;padding:1px;">
                 <img id="center-cropped" src="img/thumbnail/ranganatittu.jpg" style="height:100%;width:100%;">
             </div>
-            <div class="col-md-3" id="center-cropped" style="height:100%;padding:1px;">
+             <div class="col-md-3" id="center-cropped" style="height:100%;padding:1px;">
                 <h3 style="padding:20px;">
                     About me
                 </h3>
@@ -176,6 +192,7 @@ html, body{
             </div>
         </div>
     </div>
+    
     <div id="links1">
             <a href="img/img2.jpg" title="Banana" data-gallery>
                 <img src="img/img12.jpg" alt="Banana">
@@ -187,6 +204,7 @@ html, body{
                 <img src="img/img3.jpg" alt="Banana">
             </a>
     </div>
+    
     <div id="links">
             <a href="img/img12.jpg" title="Banana" data-gallery>
                 <img src="img/pw_maze_white.png" alt="Banana">
